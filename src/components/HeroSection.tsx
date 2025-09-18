@@ -27,7 +27,7 @@ const HeroSection = () => {
 
       {/* Seção Hero Principal */}
       <section className="bg-background">
-        <div className="container mx-auto px-8 pt-12 pb-12 lg:pt-16 lg:pb-12">
+        <div className="container mx-auto px-4 lg:px-8 pt-12 pb-12 lg:pt-16 lg:pb-12">
           {/* Hero principal */}
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-start">
             {/* Coluna de Texto */}
@@ -43,18 +43,20 @@ const HeroSection = () => {
             <div className="animate-fade-in">
               {/* Grupo Imagem + Legenda */}
               <div className="mb-6">
-                <img 
-                  src={heroMain} 
-                  alt="Cesta de café da manhã Affeto com flores e um bilhete"
-                  className="max-w-md mx-auto lg:mx-0 rounded-2xl aspect-square object-cover"
-                />
-                <p className="text-affeto-sage-100 font-sans text-sm text-center lg:text-left mt-3">
+                <div className="max-w-md mx-auto">
+                  <img 
+                    src={heroMain} 
+                    alt="Cesta de café da manhã Affeto com flores e um bilhete"
+                    className="w-full rounded-2xl aspect-square object-cover"
+                  />
+                </div>
+                <p className="text-affeto-sage-100 font-sans text-sm text-center mt-3">
                   Cartão escrito à mão.
                 </p>
               </div>
 
               {/* Botão CTA */}
-              <div className="text-center lg:text-left">
+              <div className="text-center">
                 <Button
                   variant="whatsapp"
                   size="whatsapp"
@@ -74,12 +76,12 @@ const HeroSection = () => {
 
       {/* Mini Galeria */}
       <section className="bg-background pb-12 lg:pb-20">
-        <div className="container mx-auto px-8">
+        <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
-            <img src={gallery1} alt="Mulher recebendo uma surpresa e sorrindo" className="rounded-2xl aspect-square object-cover" />
-            <img src={gallery2} alt="Vela aromática acesa criando um clima romântico" className="rounded-2xl aspect-square object-cover" />
-            <img src={gallery3} alt="Conversa de WhatsApp com elogio do cliente" className="rounded-2xl aspect-square object-cover" />
-            <img src={gallery4} alt="Casal se abraçando em um aniversário" className="rounded-2xl aspect-square object-cover" />
+            <img src={gallery1} alt="Mulher recebendo uma surpresa e sorrindo" className="w-full rounded-2xl aspect-square object-cover" />
+            <img src={gallery2} alt="Vela aromática acesa criando um clima romântico" className="w-full rounded-2xl aspect-square object-cover" />
+            <img src={gallery3} alt="Conversa de WhatsApp com elogio do cliente" className="w-full rounded-2xl aspect-square object-cover" />
+            <img src={gallery4} alt="Casal se abraçando em um aniversário" className="w-full rounded-2xl aspect-square object-cover" />
           </div>
         </div>
       </section>

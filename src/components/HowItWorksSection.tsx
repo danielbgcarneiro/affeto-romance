@@ -4,7 +4,7 @@ import { MessageCircle, Camera, Clock } from "lucide-react";
 const HowItWorksSection = () => {
   return (
     <section className="pt-8 pb-12 lg:pt-16 lg:pb-20 bg-gradient-soft">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 lg:px-8">
         {/* Título da seção */}
         <div className="text-center mb-8 lg:mb-12">
           <h2 className="font-serif font-bold text-3xl lg:text-4xl text-affeto-ink mb-4">
