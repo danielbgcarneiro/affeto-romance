@@ -1,5 +1,5 @@
-import { Heart } from "lucide-react";
-import logoAffeto from "@/assets/logo-affeto.png";
+import { Heart, Instagram } from "lucide-react";
+import logoRosa from "@/assets/logo_rosa_sem_fundo.png";
 
 const Footer = () => {
   return (
@@ -9,12 +9,12 @@ const Footer = () => {
           {/* Logo e copyright */}
           <div className="flex items-center space-x-4">
             <img 
-              src={logoAffeto} 
+              src={logoRosa} 
               alt="Affeto Cestas" 
               className="h-8 w-auto opacity-90"
             />
             <div className="text-sm opacity-80">
-              © 2024 Affeto Cestas. Mensageiros do amanhecer.
+              © 2024 Affeto Cestas. Todos os direitos reservados.
             </div>
           </div>
 
@@ -40,9 +40,7 @@ const Footer = () => {
               className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
               aria-label="Seguir no Instagram"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.295C3.8 14.24 3.8 12.017 3.8 12.017s0-2.223 1.326-3.676C5.999 7.536 7.152 7.046 8.449 7.046s2.448.49 3.323 1.295c1.326 1.453 1.326 3.676 1.326 3.676s0 2.223-1.326 3.676c-.875.805-2.026 1.295-3.323 1.295zm7.068 0c-1.297 0-2.448-.49-3.323-1.295-1.326-1.453-1.326-3.676-1.326-3.676s0-2.223 1.326-3.676c.875-.805 2.026-1.295 3.323-1.295s2.448.49 3.323 1.295c1.326 1.453 1.326 3.676 1.326 3.676s0 2.223-1.326 3.676c-.875.805-2.026 1.295-3.323 1.295z"/>
-              </svg>
+              <Instagram className="w-5 h-5" />
               <span className="text-sm">@affetocestasoficial</span>
             </a>
           </div>
