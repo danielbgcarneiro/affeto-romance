@@ -15,7 +15,7 @@ const ImagePlaceholder = ({
         flex items-center justify-center text-center p-6
         bg-background border-2 border-dashed border-affeto-sage-200
         text-affeto-sage-100 text-sm font-sans font-medium
-        rounded-lg transition-colors duration-200
+        transition-colors duration-200
         hover:border-affeto-primary hover:text-affeto-primary
         ${className}
       `}

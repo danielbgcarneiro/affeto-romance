@@ -17,6 +17,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-accent text-accent-foreground shadow-cta hover:bg-accent/90 hover:shadow-lg hover:scale-105 active:scale-95 font-semibold text-lg",
         romantic: "bg-primary text-primary-foreground shadow-romantic hover:bg-primary/90 hover:shadow-lg hover:scale-105 active:scale-95",
+        whatsapp: "bg-[#25D366] text-white font-bold shadow-lg hover:bg-[#128C7E] hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2 text-sm",
@@ -24,6 +25,7 @@ const buttonVariants = cva(
         lg: "h-11 rounded-md px-8 text-base",
         xl: "h-14 rounded-xl px-10 text-lg",
         xxl: "h-16 rounded-2xl px-12 text-xl",
+        whatsapp: "h-16 sm:h-20 rounded-2xl px-8 sm:px-12 text-lg sm:text-xl font-bold",
         icon: "h-10 w-10",
       },
     },
