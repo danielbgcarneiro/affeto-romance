@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Links de contato */}
           <div className="flex items-center space-x-6">
             <a
-              href="https://wa.me/5585987968490"
+              href="https://wa.me/5585981968490"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:opacity-80 transition-opacity"

@@ -90,7 +90,7 @@ const HeroSection = () => {
                 variant="whatsapp"
                 size="whatsapp"
                 className="w-full sm:w-auto"
-                onClick={() => window.open("https://wa.me/5585987968490?text=Oi%20Thais,%20quero%20surpresa%20rom%C3%A2ntica%20%C3%A0s%207:05.", "_blank")}
+                onClick={() => window.open("https://wa.me/5585981968490?text=Oi%20Thais,%20quero%20surpresa%20rom%C3%A2ntica%20%C3%A0s%207:05.", "_blank")}
                 data-cta="hero-7h05"
                 aria-label="Abrir WhatsApp para fazer pedido de surpresa romântica às 7:05"
               >
