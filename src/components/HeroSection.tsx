@@ -20,47 +20,16 @@ const HeroSection = () => {
         </header>
 
         {/* Hero principal */}
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-          {/* Coluna esquerda - Título e CTA */}
-          <div className="space-y-12 animate-fade-in">
-            <h1 className="font-serif font-black text-affeto-ink leading-tight text-5xl sm:text-6xl lg:text-7xl xl:text-8xl">
-              Amanhã, 7:05 — ela abre a porta, lê{" "}
-              <span className="text-affeto-primary italic">'te escolho todo dia'</span>{" "}
-              e chora sorrindo
-            </h1>
-            
-            <div className="space-y-8">
-              {/* Placeholder da imagem principal */}
-              <ImagePlaceholder 
-                label="FOTO CESTA + BILHETE À MÃO"
-                ratio="4/5"
-                className="max-w-md mx-auto lg:mx-0 rounded-2xl"
-              />
-              
-              {/* Legenda */}
-              <p className="text-affeto-sage-100 font-sans text-base text-center lg:text-left">
-                Cartão escrito à mão incluso. Foto da cesta enviada antes de sair.
-              </p>
-            </div>
+        <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:gap-20 lg:items-center">
+          {/* Mobile: Headline primeiro */}
+          <h1 className="font-serif font-black text-affeto-ink leading-tight text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-12 lg:mb-0 animate-fade-in">
+            Amanhã, 7:05 — ela abre a porta, lê{" "}
+            <span className="text-affeto-primary italic">'te escolho todo dia'</span>{" "}
+            e chora sorrindo
+          </h1>
 
-            {/* CTA Principal */}
-            <div className="text-center lg:text-left mt-12">
-              <Button
-                variant="whatsapp"
-                size="whatsapp"
-                className="w-full sm:w-auto"
-                onClick={() => window.open("https://wa.me/5585987968490?text=Oi%20Thais,%20quero%20surpresa%20rom%C3%A2ntica%20%C3%A0s%207:05.", "_blank")}
-                data-cta="hero-7h05"
-                aria-label="Abrir WhatsApp para fazer pedido de surpresa romântica às 7:05"
-              >
-                <Phone className="w-6 h-6" />
-                SALVAR MEU PARABÉNS
-              </Button>
-            </div>
-          </div>
-
-          {/* Coluna direita - Grid 2x2 de reações */}
-          <div className="order-first lg:order-last">
+          {/* Mobile: Grid 2x2 segundo, Desktop: coluna direita */}
+          <div className="mb-12 lg:mb-0 lg:order-last">
             <div className="grid grid-cols-2 gap-6 lg:gap-8 max-w-lg mx-auto animate-fade-in">
               <ImagePlaceholder 
                 label="Pessoa surpresa"
@@ -82,6 +51,52 @@ const HeroSection = () => {
                 ratio="1/1"
                 className="rounded-2xl"
               />
+            </div>
+          </div>
+
+          {/* Mobile: Conteúdo restante por último, Desktop: coluna esquerda */}
+          <div className="space-y-12 lg:col-start-1 lg:row-start-1 animate-fade-in">            
+            <div className="space-y-8 lg:block hidden">
+              {/* Placeholder da imagem principal - apenas desktop */}
+              <ImagePlaceholder 
+                label="FOTO CESTA + BILHETE À MÃO"
+                ratio="4/5"
+                className="max-w-md mx-auto lg:mx-0 rounded-2xl"
+              />
+              
+              {/* Legenda */}
+              <p className="text-affeto-sage-100 font-sans text-base text-center lg:text-left">
+                Cartão escrito à mão incluso. Foto da cesta enviada antes de sair.
+              </p>
+            </div>
+
+            {/* Mobile: Imagem principal após grid */}
+            <div className="space-y-8 lg:hidden">
+              <ImagePlaceholder 
+                label="FOTO CESTA + BILHETE À MÃO"
+                ratio="4/5"
+                className="max-w-md mx-auto rounded-2xl"
+              />
+              
+              {/* Legenda */}
+              <p className="text-affeto-sage-100 font-sans text-base text-center">
+                Cartão escrito à mão incluso. Foto da cesta enviada antes de sair.
+              </p>
+            </div>
+
+            {/* CTA Principal */}
+            <div className="text-center lg:text-left mt-12">
+              <Button
+                variant="whatsapp"
+                size="whatsapp"
+                className="w-full sm:w-auto"
+                onClick={() => window.open("https://wa.me/5585987968490?text=Oi%20Thais,%20quero%20surpresa%20rom%C3%A2ntica%20%C3%A0s%207:05.", "_blank")}
+                data-cta="hero-7h05"
+                aria-label="Abrir WhatsApp para fazer pedido de surpresa romântica às 7:05"
+              >
+                <Phone className="w-6 h-6" />
+                SALVAR MEU PARABÉNS
+              </Button>
             </div>
           </div>
         </div>
