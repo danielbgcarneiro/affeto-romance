@@ -18,7 +18,7 @@ const HeroSection = () => {
 
     if (gtag) {
       gtag('event', 'conversion', {
-        'send_to': 'AW-17517583541/KiqwCIbgnKEbELW5hKFB',
+        'send_to': 'AW-17517583541/PKkWCJuMy6MbELW5hKFB',
         'event_callback': () => {
           window.open(url, '_blank');
         }
