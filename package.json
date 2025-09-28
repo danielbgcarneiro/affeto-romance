@@ -80,7 +80,7 @@
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19"
   },
-  "description": "**URL**: https://lovable.dev/projects/ad6ef142-d01f-4524-a7b6-8b93d57d1621",
+  "description": "Landing page para Affeto Cestas",
   "main": "eslint.config.js",
   "repository": {
     "type": "git",

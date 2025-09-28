@@ -20,10 +20,10 @@ const Index = () => {
             "@type": "WebSite",
             "name": "Romance 7:12 - Affeto Cestas",
             "description": "Surpresa romântica às 7:12 da manhã em Fortaleza. Cesta com bilhete escrito à mão, foto antes de sair e entrega combinada.",
-            "url": "https://lovable.app",
+            "url": "https://affeto-romance.vercel.app",
             "potentialAction": {
               "@type": "SearchAction", 
-              "target": "https://lovable.app/?q={search_term_string}",
+              "target": "https://affeto-romance.vercel.app/?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })
