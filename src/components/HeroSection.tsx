@@ -10,6 +10,25 @@ import gallery3 from "@/assets/gallery-3.png";
 import gallery4 from "@/assets/gallery-4.png";
 
 const HeroSection = () => {
+  const handleWhatsAppClick = () => {
+    const url = "https://wa.me/+5585981968490?text=Oi%20Thais,%20quero%20surpresa%20rom%C3%A2ntica%20%C3%A0s%207:05.";
+    
+    // Type assertion to inform TypeScript about the global gtag function
+    const gtag = (window as any).gtag;
+
+    if (gtag) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17517583541/KiqwCIbgnKEbELW5hKFB',
+        'event_callback': () => {
+          window.open(url, '_blank');
+        }
+      });
+    } else {
+      // Fallback if gtag is not available
+      window.open(url, '_blank');
+    }
+  };
+
   return (
     <>
       {/* Header com Faixa de Fundo */}
@@ -61,10 +80,7 @@ const HeroSection = () => {
                   variant="whatsapp"
                   size="whatsapp"
                   className="w-full sm:w-auto"
-                  onClick={() => {
-                    window.gtag_report_conversion();
-                    window.open("https://wa.me/+5585981968490?text=Oi%20Thais,%20quero%20surpresa%20rom%C3%A2ntica%20%C3%A0s%207:05.", "_blank");
-                  }}                  data-cta="hero-7h05"
+                  onClick={handleWhatsAppClick}                  data-cta="hero-7h05"
                   aria-label="Abrir WhatsApp para fazer pedido de surpresa romântica às 7:05"
                 >
                   <Phone className="w-6 h-6" />
