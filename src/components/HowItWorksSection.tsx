@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Camera, Clock } from "lucide-react";
+import { handleWhatsAppClick } from "@/lib/utils";
 
 const HowItWorksSection = () => {
   return (
@@ -60,7 +61,7 @@ const HowItWorksSection = () => {
             variant="hero"
             size="xxl"
             className="w-full sm:w-auto min-w-[320px]"
-            onClick={() => window.open("https://wa.me/+5585981968490?text=Oi%20Thais,%20quero%20surpresa%20rom%C3%A2ntica%20%C3%A0s%207:12.", "_blank")}
+            onClick={() => handleWhatsAppClick("Oi Thais, quero surpresa romântica às 7:12.")}
             data-cta="final-7h12"
             aria-label="Abrir WhatsApp para reservar surpresa romântica às 7:12"
           >
